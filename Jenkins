@@ -1,0 +1,8 @@
+pipeline {
+    agent any
+    stages {
+        stage('Submit Stack'){
+            sh "aws cloudformation create-stack --stack-name s3bucketjenkins --template-body file://Task1.yml --region 'ap-south-1'"    
+        }
+    }
+}
