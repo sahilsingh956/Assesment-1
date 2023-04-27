@@ -6,7 +6,7 @@ Resources:
   s3bucket: 
     Type: AWS::S3::Bucket
     Properties: 
-      BucketName: my-s3-bucket
+      BucketName: s3-bucketsahil1234
 
   S3BUCKETPOLICY:
           Type: AWS::S3::BucketPolicy
