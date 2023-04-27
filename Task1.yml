@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: 'A sample template'
 
 Parameters:
-  BucketName:
+  BucketName: my-s3-bucket
     Type: String
     Description: 'Any thing'
 
