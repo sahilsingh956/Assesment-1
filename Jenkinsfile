@@ -8,7 +8,7 @@ pipeline {
             }
         stage('Create S3 bucket') {
             steps {
-                    sh 'aws cloudformation create-stack --stack-name my-s3-bucket --template-body file://Task1.yml'
+                    sh 'aws cloudformation create-stack --stack-name my-s3-bucket --region ap-south-1 --template-body file://Task1.yml'
                 }
             }
         }
