@@ -7,13 +7,10 @@ Resources:
     Type: AWS::S3::Bucket
     Properties: 
       BucketName: s3-bucketsahil1234
-      
-  s3bucket: 
     Type: AWS::S3::Bucket
     Properties: 
       BucketName: s3-bucketsahil123
-
-
+      
   S3BUCKETPOLICY:
           Type: AWS::S3::BucketPolicy
           Properties: 
