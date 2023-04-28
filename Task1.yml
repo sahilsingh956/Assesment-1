@@ -7,11 +7,17 @@ Resources:
     Type: AWS::S3::Bucket
     Properties: 
       BucketName: s3-bucketsahil1234
+      
+  s3bucket: 
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: s3-bucketsahil123
+
 
   S3BUCKETPOLICY:
           Type: AWS::S3::BucketPolicy
           Properties: 
-            Bucket: !Ref s3bucket
+            Bucket: !Ref s3bucket 
             PolicyDocument:
               Id: Mypolicy
               Version: "2012-10-17"
