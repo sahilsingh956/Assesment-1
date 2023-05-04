@@ -8,7 +8,7 @@ pipeline {
             }
         stage('Create S3 bucket') {
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AKIAXLOIG5PCM2G6UFWF', credentialsId: 'asw-creds', secretKeyVariable: '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']])
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AKIAXLOIG5PCMQUDKT4B', credentialsId: 'asw-creds', secretKeyVariable: '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']])
                 {
                     sh 'aws cloudformation create-stack --stack-name my-s3-bucket --region ap-south-1 --template-body file://Task1.yml'
                 }
